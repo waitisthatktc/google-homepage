@@ -26,3 +26,21 @@ Getting the correct color of the search form buttons
 Getting the correct color on the search form's header
 Getting the correct background color for the header
 
+Aug 31, 2020: Fixed the header problem and now back to being aligned at the top
+
+Still need to finish:
+Getting the icon next to the sign-in button
+Getting the correct color of the search form buttons
+Getting the correct color on the search forms header
+Getting the correct background color for the footer(typo on my part)
+Getting the correct font type and size
+
+Sept 3, 2020: Mostly cosmetic changes like background color and sizing changes
+
+Still need to finish:
+Getting the icon next to the sign-in button
+
+Sept 10, 2020: Can't find the icon, most of the other stuff that I can get done is cosmetic, so come back to it later to fix it up as you continue learning
+
+
+

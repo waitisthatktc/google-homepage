@@ -3,186 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <title>Google Homepage</title>
-        <style>
-            a {
-    color: black;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-}
-
-li {
-    display: inline;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 10px;
-}
-
-li a {
-    text-decoration: none;
-}
-
-.headernav {
-    width: 100%;
-    font-size: 12px;
-    display: fixed;
-    flex-direction: row;
-}
-
-.google{
-    margin: 50px;
-    padding: 50px;
-    border: 500px;
-    text-align: center;
-}
-
-#googleimg {
-    padding-bottom: 30px;
-}
-
-#googlesearchbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 10px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    width: 482px;
-    height: 39px;
-    border-top-color: rgba(0, 0, 0, 0.1);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgba(0, 0, 0, 0.1);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgba(0, 0, 0, 0.1);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    background-color: transparent;
-    margin: auto;
-}
-
-#googlesearchinput {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    width: 427px;
-    height: 34px;
-    font-family: arial,sans-serif;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-top-color: transparent;
-    border-top-width: medium;
-    border-right-color: transparent;
-    border-right-width: medium;
-    border-bottom-color: transparent;
-    border-bottom-width: medium;
-    border-left-color: transparent;
-    border-left-width: medium;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    background-color: transparent;
-    border-top-style: none;
-    border-right-style: none;
-    border-bottom-style: none;
-    border-left-style: none;
-    outline: none;
-}
-
-#googlesearchbox:hover {
-    border-color: lightblue;
-}
-
-.googlesearchbutton {
-    text: gray;
-    -moz-appearance: none;
-    margin: 37px 5px;
-    padding: 10px 14px;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
-}
-
-.googlesearchbutton:hover {
-    background-color: lightgray;
-    -moz-appearance: none;
-    margin: 37px 5px;
-    padding: 10px 14px;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
-}
-
-
-#searchIcon {
-    opacity: 0.2;
-    padding-top: 13px;
-    padding-left: 10px;
-    font-size: 15px;
-}
-
-.footernav {
-    position: fixed;
-    bottom: 0;
-    font-size: 12px;
-    height: 25px;
-    width: 100%;
-    border:rgba(255, 255, 255, .6);
-    background: lightslategray;
-}
-
-.signin {
-    border: 5;
-    line-height: 2.5;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    background-color: rgb(24, 102, 236);
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-    border-radius: 5px;
-}
-        </style>
     </head>
     <body>
-        <div class="headernav">
+        <header class="header" role="navigation">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
-                <li style="float:right; padding-bottom: 50px;"><button class="signin">Sign in</button></li>
-                <li style="float:right"><a href="#">Images</a></li>
-                <li style="float:right"><a href="#">Gmail</a></li>
+                <div>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                </div>
             </ul>
-        </div>
+            <ul>
+                <div>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><button class="signin">Sign in</button></li>
+                </div>
+            </ul>
+        </header>
         <div class="google">
             <img id="googleimg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"><br />
             <div id="googlesearchbox">
@@ -191,15 +31,21 @@ li a {
             <button class="googlesearchbutton">Google Search</button>
             <button class="googlesearchbutton">I'm Feeling Lucky</button>
         </div>
-        <div class="footernav">
-            <ul>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">How Search Works</a></li>
-                <li style="float:right"><a href="#">Settings</a></li>
-                <li style="float:right"><a href="#">Terms</a></li>
-                <li style="float:right"><a href="#">Privacy</a></li>                
-            </ul>
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Privacy</a></li>  
+                    <li><a href="#">Terms</a></li>              
+                    <li><a href="#">Settings</a></li>
+                </ul>
+        </div>
         </div>
     </body>
 </html>
